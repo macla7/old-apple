@@ -24,45 +24,47 @@ ul {
   display: flex;
   position: absolute;
   top: 100px;
-}
 
-.nav1 .link {
-  flex: 1;
-  display: flex;
-  min-width: 100px;
-}
+  .link {
+    flex: 1;
+    display: flex;
+    min-width: 100px;
+  }
 
-.nav1 a {
-  display: flex;
+  a {
+    display: flex;
+  }
 }
 /* end of flexbox */
 
-nav .link {
-  background-image: linear-gradient(rgb(190, 190, 190) 10%,rgb(170, 170, 170) 30%, rgb(150, 150, 150) 50%, rgb(135, 135, 135) 53%, rgb(100, 100, 100) 90%);
-  text-align: center;
-  border-right: solid 1px rgb(70, 70, 70);
-}
+nav {
+  .link {
+    background-image: linear-gradient(rgb(190, 190, 190) 10%,rgb(170, 170, 170) 30%, rgb(150, 150, 150) 50%, rgb(135, 135, 135) 53%, rgb(100, 100, 100) 90%);
+    text-align: center;
+    border-right: solid 1px rgb(70, 70, 70);
+  }
 
-nav .link:nth-child(1) {
-  border-radius: 5px 0 0 5px;
-}
+  .link:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+  }
 
-nav .link:nth-child(9) {
-  border-radius: 0 5px 5px 0;
-}
+  .link:nth-child(9) {
+    border-radius: 0 5px 5px 0;
+  }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.8em;
-  flex-basis: 100%;
-  align-items: center;
-  padding: 5px 30px;
-}
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    flex-basis: 100%;
+    align-items: center;
+    padding: 5px 30px;
+  }
 
-nav span {
-  display: block;
-  width: 100%;
+  span {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* Testing a grid version of nav bar */
@@ -71,38 +73,26 @@ nav span {
   top: 30px;
   display: grid;
   grid-template-columns: repeat(9, minmax(100px, 1fr));
-}
 
-.nav2 .link {
-  display: grid;
-  align-items: center;
+  .link {
+    display: grid;
+    align-items: center;
+  }
 }
 /* finishes grid */
 
-
-
-
-
-
-
-
-
-
-
-
-
 header {
   width: 70%;
-}
 
-header h1 {
-  font-weight: 100;
-  font-size: 60px;
-  font: Helvetica, Arial, Verdana, sans-serif
-}
+  h1 {
+    font-weight: 100;
+    font-size: 60px;
+    font: Helvetica, Arial, Verdana, sans-serif
+  }
 
-header h2 {
-  font-weight: lighter;
+  h2 {
+    font-weight: lighter;
+  }
 }
 
 .hero {
